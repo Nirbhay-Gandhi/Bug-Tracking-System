@@ -2,7 +2,7 @@ package model;
 
 public class Tester extends User{
 
-	public Tester(int userId, String userName, String userEmail) {
+	public Tester(String userId, String userName, String userEmail) {
 		super(userId, userName, userEmail);
 		this.userType = UserTypeEnum.Tester;
 	}

@@ -6,7 +6,7 @@ public class ProjectManager extends User{
 	
 	public LocalDateTime lastLoggedIn;
 
-	public ProjectManager(int userId, String userName, String userEmail, LocalDateTime lastLoggedIn) {
+	public ProjectManager(String userId, String userName, String userEmail, LocalDateTime lastLoggedIn) {
 		super(userId, userName, userEmail);
 		this.userType = UserTypeEnum.ProjectManager;
 		this.lastLoggedIn = lastLoggedIn;

@@ -7,13 +7,13 @@ public class Developer extends User{
 
 	private Set<Project> projectAllocated;
 
-	public Developer(int userId, String userName, String userEmail) {
+	public Developer(String userId, String userName, String userEmail) {
 		super(userId, userName, userEmail);
 		this.userType = UserTypeEnum.Developer;	
 		projectAllocated = new HashSet<>();
 	}
 
-	public Developer(int userId, String userName, String userEmail, UserTypeEnum userType, Set<Project> projectAllocated) {
+	public Developer(String userId, String userName, String userEmail, UserTypeEnum userType, Set<Project> projectAllocated) {
 		super(userId, userName, userEmail);
 		this.projectAllocated = projectAllocated;
 	}
