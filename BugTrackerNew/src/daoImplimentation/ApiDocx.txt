@@ -1,0 +1,30 @@
+ Release Notes:
+ v 1.0 - saveUser[no validation], deleteUser, getUser, getUsers
+ v 2.0 - define exception for each api
+ 
+ 
+ user api: 
+ 
+1. saveUser 
+save a single user
+int saveUser(User u) : returns number of rows effected 
+	  
+2. saveUsers  
+save a set of users. Given list and save as a set of users
+int saveUsers(Set<Users> ust) : returns number of rows effected
+
+3. deleteUser 
+delete user from database given the userId
+int removeUser(UserId) : returns number of rows effected
+
+4. deleteUsers 
+delete users from database
+int removeUsers(Set<users> usst) : returns number of rows effected
+
+5. getUser  
+get a single user from database given userId/userName/userEmail
+User getUser(String value) : returns the user based on the value. If not found returns null
+
+6. getUsers 
+get all the set of users given userType 
+Set<User> getUsers(String userType) : returns the set of users based on the userType
