@@ -1,0 +1,23 @@
+Query-1]
+Problem statement:
+[user] (parent)-> {[developer],[tester],[projectmanager]} (child)
+when provided with 'user_id' which is property of 'user' table, return all the attributes of the tables corresponding to the user_type associated with that user_id.
+Example: user_id - 'A209'
+in 'user' table: 
+------------------
+user_id  user_name    user_email         user_type 
+'A209'   'Nirbhay'    'nirbhay@xyz.com'  'projectmanager'
+
+we need to get the values from 'projectmanager' table, why? user_type == 'projectmanager' 
+in 'projectmanager' table: 
+--------------------------
+developer_id  matrix_acore     
+'A209'        8
+
+Final result
+-----------------
+user_id  user_name    user_email         user_type          matrix_score
+'A209'   'Nirbhay'    'nirbhay@xyz.com'  'projectmanager'   8
+
+Query:
+-------------
